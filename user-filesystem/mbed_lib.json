@@ -1,0 +1,32 @@
+{
+    "name": "user-filesystem",
+    "config": {
+        "present": {
+            "help": "Enable user filesystem",
+            "options": [false, true],
+            "value": true
+        },
+        "type": {
+            "help": "Type of user filesystem, FAT or LITTLE",
+            "options": ["FAT", "LITTLE"],
+            "value": "LITTLE"
+        },
+        "blockdevice": {
+            "help": "Currently only default is supported. If default, the block device will be chosen via BlockDevice::get_default_instance().",
+            "options": ["default"],
+            "value": "default"
+        },
+        "blockdevice-address": {
+            "help": "Address in bytes of the block device backing the filesystem",
+            "value": "0"
+        },    
+        "blockdevice-size": {
+            "help": "Size in bytes of the block device backing the filesystem. If default, the maximum size available is used.",
+            "value": "0"
+        },
+        "mount_point": {
+            "help": "Where to mount the filesystem",
+            "value": "user"
+        }
+    }
+}

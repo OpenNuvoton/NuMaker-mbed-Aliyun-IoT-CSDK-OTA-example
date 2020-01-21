@@ -1,0 +1,6 @@
+BUILD/
+COMPONENT_MBEDBL_UCP/
+drivers/storage/COMPONENT_NUSD/
+mbed-os/
+NuMaker-mbed-Aliyun-IoT-CSDK/
+.mbed
